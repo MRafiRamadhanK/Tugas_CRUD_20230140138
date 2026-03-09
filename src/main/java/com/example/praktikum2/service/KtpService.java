@@ -47,6 +47,8 @@ public class KtpService {
         return ktpRepository.save(existingKtp);
     }
 
+
+
     public void deleteKtp(Integer id) {
         Ktp existingKtp = getKtpById(id);
         ktpRepository.delete(existingKtp);
